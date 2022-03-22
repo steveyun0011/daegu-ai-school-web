@@ -13,60 +13,82 @@
         a{
             text-decoration-line: none;
         }
-        #container{
-            display:grid;
-            grid-template-columns: 1fr 1fr;
-        }
+        
         @media all and (min-width: 480px){ 
-            body{
-                background-color:rgb(101, 177, 221);
-            }
+            #container{
+                    display:grid;
+                    grid-template-columns: 1fr 1fr;
+                    }    
         }
         
         @media all and (max-width: 480px) {
             body{
-                background-color:red;
+                background-color:rgb(255, 255, 255);
             }
         }
-    
+        body{
+            font-family: 'Gowun Dodum', sans-serif;
+        }
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display" rel="stylesheet">
+    
 </head>
 
 <body>
     <h1><a href="index.html">WEB</a></h1>
     <div id="container">
-        Welcome! Do you know <u>WWW</u> is World Wide <strong><a href="http://info.cern.ch/hypertext/WWW/TheProject.html">WEB</strong></a>?
-    <br><br>
+        <div>
+            <u>WWW</u> is World Wide <strong><a href="http://info.cern.ch/hypertext/WWW/TheProject.html">WEB</strong></a>?
+        
+        <p>
+            <img src="matt-popovich-0FZrPECK5cg-unsplash.jpg" width="360" height="228">
+        </p>
+        </div>
     
-    <!-- # 태그 a는 Anchor의 약자로 단순히 a만 사용 시 텍스트의 밑줄을 표현한다.<br>
+        <div>
+            # unordered list
+            <ul>
+                <li>1.<a href="1.html">html</a></li>
+                <li>2.<a href="2.html">css</a></li>
+                <li>3.<a href="3.html">javascript</a></li>
+            </ul>
+            
+            # ordered list
+            <ol>
+                <li><a href="1.html">html</li>
+                <li><a href="2.html">css</a></li>
+                <li><a href="3.html">javascript</a></li>
+            </ol>
+        
+        </div>
+        
+    </div>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           <!-- <li>egoing</li>
+            <li>steve</li>
+            <li>stacy</li> -->
+
+
+<!-- # 태그 a는 Anchor의 약자로 단순히 a만 사용 시 텍스트의 밑줄을 표현한다.<br>
     # a href(hypertext reference)는 a 태그로 감싸진(a /a) 요소를 눌렀을 때, 첨부한 링크를 불러온다.<br>
     # 태그 bold는 글자의 굵음만을 표현하지만, strong은 형태는 같으나 강조의 의미를 덧붙여 사용된다. -->
-    <p>
-    <img src="matt-popovich-0FZrPECK5cg-unsplash.jpg" width="360" height="228">
-    </p>
-    <p></p>
-    </div>
-        <div>
-        <li>egoing</li>
-        <li>steve</li>
-        <li>stacy</li>
-        </div><div>
-        <ul>
-            <li>1.<a href="1.html">html</a></li>
-            <li>2.<a href="2.html">css</a></li>
-            <li>3.<a href="3.html">javascript</a></li>
-        </ul>
-        # unordered list
-        </div><div>
-        <ol>
-            <li><a href="1.html">html</li>
-            <li><a href="2.html">css</a></li>
-            <li><a href="3.html">javascript</a></li>
-        </ol>
-        # ordered list<br>
-        </div>
-    </div>  
-    <!-- # br = p /p (줄을 바꾸어 새로운 페이지의 시작과 끝을 표시한다.)= 줄바꿈 -->
+
+<!-- # br = p /p (줄을 바꾸어 새로운 페이지의 시작과 끝을 표시한다.)= 줄바꿈 -->
 
     <div id="disqus_thread"></div>
     <script>
