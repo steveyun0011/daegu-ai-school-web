@@ -44,9 +44,54 @@
         gtag('config', 'G-CsXNE486VH4');
         </script>
 
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <style>
+        .btn{
+           text-decoration: none;
+           font-size:2rem;
+           color:white;
+           padding:10px 20px 10px 20px;
+           margin:20px;
+           display:inline-block;
+           border-radius: 10px;
+           transition:all 0.1s;
+           text-shadow: 0px -2px rgba(0, 0, 0, 0.44);
+           font-family: 'Lobster', cursive;
+            }
+        .btn:active{
+              transform: translateY(3px);
+            }
+        .btn.day{
+              background-color: #95c6ff;
+              border-bottom:5px solid #95c6ff;
+            }
+        .btn.day:active{
+              border-bottom:2px solid #95c6ff;
+            }
+        .btn.night{
+              background-color: gray;
+              border-bottom:5px solid gray;
+            }
+            .btn.night:active{
+              border-bottom:2px solid gray;
+            }
+    </style>
 </head>
 
 <body>
+    <input type="button" value="day" onclick="
+        document.querySelector('body').style.backgroundColor = 'white';
+        document.querySelector('body').style.color = 'black';
+        "
+    >
+    <input type="button" value="night" onclick="
+        document.querySelector('body').style.backgroundColor = 'black';
+        document.querySelector('body').style.color = 'white';
+        "
+    >
+    <a class="btn.day" href="#day">day</a>
+    <a class="btn.night" href="#night">night</a>
+    
     <h1><a href="index.html">WEB</a></h1>
     <div id="container">
         <div>
@@ -56,7 +101,7 @@
             <img src="matt-popovich-0FZrPECK5cg-unsplash.jpg" width="360" height="228">
         </p>
         </div>
-    
+
         <div>
             # unordered list
             <ul>
